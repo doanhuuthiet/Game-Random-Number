@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'BowlbyOneSC';
+    src: url('BowlbyOneSC-Regular.ttf');
+}
+body {font-family: 'BowlbyOneSC'; color: rgb(177, 0, 93); margin: 0px; padding: 0px}
+#countTime {font-size: 1.1em}
+.block-number {position: relative; width: 100%; text-align: center; padding: 20px 0px ; height: 700px; background: #f2f2f2; z-index: -1}
+.numbers {list-style: none; }
+.numbers li {display: none; font-family: 'BowlbyOneSC'; font-size: 660px; line-height:  660px; }
+.numbers li.active{display: block}
+
+.block-button {width: 100%; text-align: center; margin-top: 10px; z-index: 100000}
+.block-result {width: 100%; text-align: center;}
+#btnStart {padding: 10px 40px; font-size: 2em; font-family: 'BowlbyOneSC'; cursor: pointer; color: rgb(177, 0, 93); border: 2px solid rgb(177, 0, 93)}
+.block-result {text-align: left; display: none}
+.block-result h2 {padding-left: 20px; margin-bottom: 5px}
+.ulresult {list-style: none; }
+.ulresult li {display: inline-block; margin-right: 60px; font-size: 1.4em}
