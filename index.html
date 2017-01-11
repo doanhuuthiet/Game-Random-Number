@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>Game Random Number</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href='style.css'  rel="stylesheet">
 
 <script src="jquery-1.12.1.min.js"></script>
@@ -24,6 +26,37 @@
 	</ul>
 </div>
 
+<div class="block-settings" onclick="toggleSettings()" title="Settings"></div>
+<div class="form-settings">
+	<div class="row">
+		<label>Number From</label>
+		<div>
+			<input id="minnum" value="1">
+		</div>
+	</div>
+	<div class="row">
+		<label>Number To</label>
+		<div>
+			<input id="maxnum" value="50">
+		</div>
+	</div>
+	<div class="row">
+		<label>Number Interval</label>
+		<div>
+			<input id="numinterval" value="100">
+		</div>
+	</div>
+	<div class="row">
+		<label>Limt Time (milisecond)</label>
+		<div>
+			<input id="limittime" value="5000">
+		</div>
+	</div>
+	<div class="row">
+		<button type="button" onclick="setOptions()">Apply</button>
+		<span class="setting-success">Setting Success.</span>
+	</div>
+</div>
 
 </body>
 </html>

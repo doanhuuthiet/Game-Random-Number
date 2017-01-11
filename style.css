@@ -5,7 +5,7 @@
 body {font-family: 'BowlbyOneSC'; color: rgb(177, 0, 93); margin: 0px; padding: 0px}
 #countTime {font-size: 1.1em}
 .block-number {position: relative; width: 100%; text-align: center; padding: 20px 0px ; height: 700px; background: #f2f2f2; z-index: -1}
-.numbers {list-style: none; }
+.numbers {list-style: none; margin-left: 0px; padding-left: 0px;}
 .numbers li {display: none; font-family: 'BowlbyOneSC'; font-size: 660px; line-height:  660px; }
 .numbers li.active{display: block}
 
@@ -14,5 +14,22 @@ body {font-family: 'BowlbyOneSC'; color: rgb(177, 0, 93); margin: 0px; padding: 
 #btnStart {padding: 10px 40px; font-size: 2em; font-family: 'BowlbyOneSC'; cursor: pointer; color: rgb(177, 0, 93); border: 2px solid rgb(177, 0, 93)}
 .block-result {text-align: left; display: none}
 .block-result h2 {padding-left: 20px; margin-bottom: 5px}
-.ulresult {list-style: none; }
+.ulresult {list-style: none; margin: 0px; }
 .ulresult li {display: inline-block; margin-right: 60px; font-size: 1.4em}
+.block-settings {position: absolute; top: 0px; right: 0px; width: 25px; height: 25px; background: rgb(177, 0, 93); color: #fff; cursor: pointer}
+.form-settings {position: absolute; top: 0px; right: 25px; display: none; font-size: 14px; background: #fff; padding: 20px; border: 2px solid rgb(177, 0, 93);}
+.row {margin-top: 10px; position: relative}
+.form-settings button {border: 2px solid rgb(177, 0, 93); padding: 4px 20px; font-family: 'BowlbyOneSC'; color: rgb(177, 0, 93); margin-top: 10px}
+.setting-success {font-size: 10px; }
+@media (max-width: 1366px) {
+	.block-number {height: 400px}
+	.numbers li {height: 400px; line-height: 400px; font-size: 460px;}
+}
+@media (max-width: 450px) {
+	.block-number {height: 400px}
+	.numbers li {font-size: 260px; height: 400px; line-height: 400px;}
+}
+@media (max-width: 320px) {
+	.block-number {height: 300px}
+	.numbers li {font-size: 180px; height: 300px; line-height: 300px;}
+}

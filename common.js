@@ -13,13 +13,16 @@ function initNumbers(){
 	}
 }
 
+function refreshNumbers(){
+	$(".numbers").html("");
+}
+
 function setCountTime(){
 	$('#countTime').html(curTime/1000);
 }
 
 $(function(){
-	initNumbers();
-	setCountTime();
+	setOptions();
 });
 function startGame(){
 	if(flgNext){
@@ -47,4 +50,22 @@ function startGame(){
 
 function stopGame(){
 	clearInterval(intervalNumber);
+}
+
+function toggleSettings(){
+	$(".form-settings").toggle();
+	$(".setting-success").hide();
+}
+function setOptions(){
+	$(".ulresult").html("");
+	$(".block-result").hide();
+	minNum = $("#minnum").val();
+	maxNum = $("#maxnum").val();
+	numInterval = $("#numinterval").val();
+	limitTime = $("#limittime").val();
+	curTime = limitTime;
+	setCountTime();
+	refreshNumbers();
+	initNumbers();
+	$(".setting-success").toggle();
 }
