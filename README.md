@@ -8,5 +8,5 @@ It is simple and fast. Show a random number after time
   + limitTime = 5000; /*milisecond*/
   
   *Also you can customize the parameters on the screen
- ## Link demo: 
+## Link demo: 
  <a href="http://doanhuuthiet.xyz/public/demo/gamerandomnumber/" target="_blank">http://doanhuuthiet.xyz/public/demo/gamerandomnumber/</a>
