@@ -1,4 +1,4 @@
-# Jquery-Random-Number
+# Game-Random-Number
 It is simple and fast. Show a random number after time
 ##Settings
 - Default:
