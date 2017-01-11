@@ -1,5 +1,5 @@
 # Jquery-Random-Number
-Show a random number after time
+It is simple and fast. Show a random number after time
 ##Settings
 - Default:
   + minNum = 1;
